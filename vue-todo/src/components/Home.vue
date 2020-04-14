@@ -1,15 +1,15 @@
 <template>
     <v-container>
-        {{todoList}}
         <v-layout row wrap>
-            <v-flex xs6>
-                <List />
+            <v-flex xs6 pa-2>
+                <List
+                    :todoList="todoList"
+                 />
             </v-flex>
 
-            <v-flex xs6>
+            <v-flex xs6 pa-2>
                 <ListAdd
-                @listAdd="listAdd"
-                
+                    @listAdd="listAdd"
                  />
             </v-flex>
 

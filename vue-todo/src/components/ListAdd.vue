@@ -32,6 +32,7 @@ export default {
                 alert('할 일을 입력해주세요')
             } else {
                 this.$emit('listAdd', this.memo)
+                this.memo = ''
             }
         },
     }
